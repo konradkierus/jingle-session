@@ -24,7 +24,8 @@ var ACTIONS = {
 
     // Unstandardized actions: might go away anytime without notice
     'source-add': 'onSourceAdd',
-    'source-remove': 'onSourceRemove'
+    'source-remove': 'onSourceRemove',
+    'source-update': 'onSourceUpdate',
 };
 
 
@@ -189,7 +190,8 @@ JingleSession.prototype = extend(JingleSession.prototype, {
             'transport-reject': true,
             'transport-accept': true,
             'source-add': true,
-            'source-remove': true
+            'source-remove': true,
+            'source-update': true
         };
 
         if (requirePending[action]) {
