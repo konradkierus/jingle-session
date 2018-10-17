@@ -35,6 +35,7 @@ function JingleSession(opts) {
     var self = this;
 
     this.sid = opts.sid || uuid.v4();
+    this.cid = opts.cid;
     this.peer = opts.peer;
     this.peerID = opts.peerID || this.peer.full || this.peer;
     this.isInitiator = opts.initiator || false;
