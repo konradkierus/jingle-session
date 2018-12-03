@@ -26,6 +26,7 @@ var ACTIONS = {
     'source-add': 'onSourceAdd',
     'source-remove': 'onSourceRemove',
     'source-update': 'onSourceUpdate',
+    'source-accept': 'onSourceAccept',
 };
 
 
@@ -192,7 +193,8 @@ JingleSession.prototype = extend(JingleSession.prototype, {
             'transport-accept': true,
             'source-add': true,
             'source-remove': true,
-            'source-update': true
+            'source-update': true,
+            'source-accept': true
         };
 
         if (requirePending[action]) {
