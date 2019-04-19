@@ -2,7 +2,7 @@ var util = require('util');
 var uuid = require('uuid');
 var async = require('async');
 var extend = require('extend-object');
-var WildEmitter = require('wildemitter');
+var WildEmitter = require('@konradkierus/wildemitter');
 
 
 var ACTIONS = {
